@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br><hr><br>");
+        }
+
+        function mostra(frase){
+            document.write("<big>" + frase + "</big>");
+            pulaLinha();
+        }
+
+        var linhas = parseInt(prompt("Quantas linha você quer?"));
+        var colunas = parseInt(prompt("Quantas colunas você quer?"));
+        var numeroInicial = parseInt(prompt("Qual o numero inicial que você quer?"));
+        var aviso = alert("Obs: o número final será o produto da multiplicação do número de linhas e colunas que você escolher somada com o numero inicial menos 1")
+
+        for(var linha = 1; linha <= linhas; linha++){
+            for(var coluna = 1; coluna <= colunas; coluna++){
+                document.write(numeroInicial++ + " ")
+            }
+            pulaLinha();
+        }
+
+    </script>
+</body>
+</html>
